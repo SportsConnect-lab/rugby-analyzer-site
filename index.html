@@ -93,13 +93,14 @@
   <main>
     <!-- ===== Hero（分析サイト向け動画背景） ===== -->
    <section class="relative py-12 sm:py-20 overflow-hidden">
-  <!-- 背景GIF -->
+  <!-- 背景動画（MP4） -->
   <div class="absolute inset-0 -z-10 overflow-hidden">
-    <img src="images/animated-dashboard.gif" alt="分析アニメーション背景"
-         class="w-full h-full object-cover opacity-90">
-    <!-- 読みやすさ確保用の薄いオーバーレイ -->
-    <div class="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-transparent"></div>
-  </div>
+    <video autoplay muted loop playsinline preload="auto" class="w-full h-full object-cover opacity-80">
+      <source src="/images/animated-dashboard.mp4" type="video/mp4">
+      <!-- Fallback用（再生できない時） -->
+      <img src="/images/animated-dashboard.gif" alt="分析アニメーション背景" class="w-full h-full object-cover">
+    </video>
+
 
 
       <div class="absolute inset-0 hero-mask pointer-events-none hidden md:block"></div>
