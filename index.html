@@ -398,6 +398,29 @@
       <input type="email" name="email" placeholder="メールアドレス" required
              class="w-full p-3 rounded bg-white/10 border border-white/20 focus:outline-none focus:border-brand">
 
+      <!-- 🆕 ご希望プラン選択 -->
+      <div class="text-left">
+        <label class="block text-white/80 font-semibold mb-2">現在ご希望のプラン</label>
+        <div class="grid grid-cols-2 gap-2 text-left">
+          <label class="flex items-center gap-2 bg-white/5 rounded px-3 py-2 cursor-pointer hover:bg-white/10">
+            <input type="radio" name="plan" value="無料相談プラン" required class="accent-blue-500">
+            <span>無料相談プラン</span>
+          </label>
+          <label class="flex items-center gap-2 bg-white/5 rounded px-3 py-2 cursor-pointer hover:bg-white/10">
+            <input type="radio" name="plan" value="ライト" class="accent-blue-500">
+            <span>ライト</span>
+          </label>
+          <label class="flex items-center gap-2 bg-white/5 rounded px-3 py-2 cursor-pointer hover:bg-white/10">
+            <input type="radio" name="plan" value="スタンダード" class="accent-blue-500">
+            <span>スタンダード</span>
+          </label>
+          <label class="flex items-center gap-2 bg-white/5 rounded px-3 py-2 cursor-pointer hover:bg-white/10">
+            <input type="radio" name="plan" value="プレミアム" class="accent-blue-500">
+            <span>プレミアム</span>
+          </label>
+        </div>
+      </div>
+
       <textarea name="message" rows="5" placeholder="お問い合わせ内容" required
              class="w-full p-3 rounded bg-white/10 border border-white/20 focus:outline-none focus:border-brand"></textarea>
 
@@ -411,6 +434,7 @@
     </form>
   </div>
 </section>
+
 
 
 
