@@ -346,12 +346,23 @@
   <div class="max-w-2xl mx-auto text-center">
     <h2 class="text-3xl font-bold mb-6">お問い合わせ</h2>
     <form action="https://formspree.io/f/xnngwpop" method="POST" class="space-y-4">
+
       <input type="text" name="name" placeholder="お名前" required
              class="w-full p-3 rounded bg-white/10 border border-white/20 focus:outline-none focus:border-brand">
+
+      <input type="text" name="team" placeholder="チーム名" required
+             class="w-full p-3 rounded bg-white/10 border border-white/20 focus:outline-none focus:border-brand">
+
+      <input type="tel" name="phone" placeholder="電話番号（例：090-1234-5678）" required
+             class="w-full p-3 rounded bg-white/10 border border-white/20 focus:outline-none focus:border-brand">
+
       <input type="email" name="email" placeholder="メールアドレス" required
              class="w-full p-3 rounded bg-white/10 border border-white/20 focus:outline-none focus:border-brand">
+
       <textarea name="message" rows="5" placeholder="お問い合わせ内容" required
              class="w-full p-3 rounded bg-white/10 border border-white/20 focus:outline-none focus:border-brand"></textarea>
+
+      <!-- ✅ 送信後のリダイレクト先 -->
       <input type="hidden" name="_redirect" value="https://sportsconnect-lab.github.io/rugby-analyzer-site/thanks.html">
 
       <button type="submit"
@@ -361,6 +372,7 @@
     </form>
   </div>
 </section>
+
 
 
     <!-- ===== Footer ===== -->
