@@ -94,18 +94,11 @@
     <!-- ===== Hero Section (動画背景) ===== -->
 <section class="relative overflow-hidden min-h-[620px] sm:min-h-[700px]">
 
-  <!-- 背景動画 -->
-  <video
-    class="absolute inset-0 w-full h-full object-cover"
-    autoplay
-    muted
-    loop
-    playsinline
-    preload="metadata"
-    poster="images/hero-poster.jpg"
-  >
-    <source src="images/hero.mp4" type="video/mp4" />
-  </video>
+ <!-- 背景画像 -->
+  <div
+    class="absolute inset-0 bg-cover bg-center"
+    style="background-image: url('images/hero-bg.jpg'); opacity: 0.25;"
+  ></div>
 
   <!-- 暗めのマスク -->
   <div class="absolute inset-0 bg-black/55"></div>
