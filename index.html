@@ -538,26 +538,171 @@ document.addEventListener('mousemove', (e) => {
 });
 </script>
 
-    <!-- ===== FAQ ===== -->
-    <section id="faq" class="py-16 bg-[#0B0C10]">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-2xl sm:text-3xl font-bold text-center text-white">よくある質問</h2>
-        <dl class="mt-10 grid gap-6">
-          <div class="p-6 rounded-2xl border border-white/10 bg-black/50 shadow-soft">
-            <dt class="font-semibold text白">対象カテゴリは？</dt>
-            <dd class="mt-2 text白/70">高校・大学・社会人クラブなどアマチュア全般に対応します。</dd>
-          </div>
-          <div class="p-6 rounded-2xl border border白/10 bg-black/50 shadow-soft">
-            <dt class="font-semibold text白">納期の目安は？</dt>
-            <dd class="mt-2 text白/70">試合1本で—営業日程度（内容により変動）。</dd>
-          </div>
-          <div class="p-6 rounded-2xl border border白/10 bg-black/50 shadow-soft">
-            <dt class="font-semibold text白">守秘義務は？</dt>
-            <dd class="mt-2 text白/70">NDAの締結に対応します。データは目的外利用しません。</dd>
-          </div>
-        </dl>
+    <!-- ===== FAQセクション ===== -->
+<section id="faq" class="py-20 bg-[#0B0C10] border-t border-white/10 text-white">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-center mb-12">よくある質問</h2>
+
+    <!-- カテゴリブロック -->
+    <div class="space-y-10">
+
+      <!-- 🏉 サービス全般 -->
+      <div>
+        <h3 class="text-xl font-semibold text-brand mb-4 flex items-center gap-2">
+          🏉 サービス全般について
+        </h3>
+        <div class="divide-y divide-white/10">
+          <!-- Q1 -->
+          <details class="group py-4 cursor-pointer">
+            <summary class="flex justify-between items-center">
+              <span class="font-semibold group-hover:text-brand transition">どんなチームが利用していますか？</span>
+              <span class="transition group-open:rotate-45 text-white/60">+</span>
+            </summary>
+            <p class="mt-2 text-white/70 leading-relaxed">
+              大学・高校・社会人クラブなど、全国大会を目指す強豪校から地域クラブまで幅広くご利用いただいています。分析担当者がいないチームでも問題なく導入できます。
+            </p>
+          </details>
+
+          <details class="group py-4 cursor-pointer">
+            <summary class="flex justify-between items-center">
+              <span class="font-semibold group-hover:text-brand transition">ラグビー以外の競技でも利用できますか？</span>
+              <span class="transition group-open:rotate-45 text-white/60">+</span>
+            </summary>
+            <p class="mt-2 text-white/70 leading-relaxed">
+              現在はラグビー専用サービスですが、サッカー・アメフト・バスケットボールへの展開も準備中です。
+            </p>
+          </details>
+
+          <details class="group py-4 cursor-pointer">
+            <summary class="flex justify-between items-center">
+              <span class="font-semibold group-hover:text-brand transition">分析担当者がいなくても大丈夫ですか？</span>
+              <span class="transition group-open:rotate-45 text-white/60">+</span>
+            </summary>
+            <p class="mt-2 text-white/70 leading-relaxed">
+              映像提出だけで、データ抽出からレポート作成まで全て対応します。希望があれば、分析活用の打ち合わせも可能です。
+            </p>
+          </details>
+        </div>
       </div>
-    </section>
+
+      <!-- 💴 料金・契約 -->
+      <div>
+        <h3 class="text-xl font-semibold text-brand mb-4 flex items-center gap-2">
+          💴 料金・契約について
+        </h3>
+        <div class="divide-y divide-white/10">
+          <details class="group py-4 cursor-pointer">
+            <summary class="flex justify-between items-center">
+              <span class="font-semibold group-hover:text-brand transition">どのプランを選べば良いか分かりません。</span>
+              <span class="transition group-open:rotate-45 text-white/60">+</span>
+            </summary>
+            <p class="mt-2 text-white/70 leading-relaxed">
+              無料相談プランにて、チームの課題や目的を伺いながら最適なプランをご提案します。まずはお気軽にご相談ください。
+            </p>
+          </details>
+
+          <details class="group py-4 cursor-pointer">
+            <summary class="flex justify-between items-center">
+              <span class="font-semibold group-hover:text-brand transition">試合数に制限はありますか？</span>
+              <span class="transition group-open:rotate-45 text-white/60">+</span>
+            </summary>
+            <p class="mt-2 text-white/70 leading-relaxed">
+              ありません。3試合からお申し込みいただけ、シーズンを通しての分析も承ります。10試合以上の長期契約には割引が適用されます。
+            </p>
+          </details>
+
+          <details class="group py-4 cursor-pointer">
+            <summary class="flex justify-between items-center">
+              <span class="font-semibold group-hover:text-brand transition">支払い方法を教えてください。</span>
+              <span class="transition group-open:rotate-45 text-white/60">+</span>
+            </summary>
+            <p class="mt-2 text-white/70 leading-relaxed">
+              銀行振込・クレジットカード（請求書払い）に対応しています。チーム名義・顧問名義・個人名義いずれでも決済可能です。
+            </p>
+          </details>
+
+          <details class="group py-4 cursor-pointer">
+            <summary class="flex justify-between items-center">
+              <span class="font-semibold group-hover:text-brand transition">年間契約やシーズン契約はありますか？</span>
+              <span class="transition group-open:rotate-45 text-white/60">+</span>
+            </summary>
+            <p class="mt-2 text-white/70 leading-relaxed">
+              はい。半年・年間・公式戦期間など、チームの活動スケジュールに合わせたサブスク契約をご用意しています。（10〜15%の割引適用あり）
+            </p>
+          </details>
+        </div>
+      </div>
+
+      <!-- 📊 納品・内容 -->
+      <div>
+        <h3 class="text-xl font-semibold text-brand mb-4 flex items-center gap-2">
+          📊 納品・分析内容について
+        </h3>
+        <div class="divide-y divide-white/10">
+          <details class="group py-4 cursor-pointer">
+            <summary class="flex justify-between items-center">
+              <span class="font-semibold group-hover:text-brand transition">納品までどのくらいかかりますか？</span>
+              <span class="transition group-open:rotate-45 text-white/60">+</span>
+            </summary>
+            <p class="mt-2 text-white/70 leading-relaxed">
+              映像受領から通常3〜5営業日で納品します。大会や合宿など急ぎ対応もご相談ください。
+            </p>
+          </details>
+
+          <details class="group py-4 cursor-pointer">
+            <summary class="flex justify-between items-center">
+              <span class="font-semibold group-hover:text-brand transition">納品形式はどうなりますか？</span>
+              <span class="transition group-open:rotate-45 text-white/60">+</span>
+            </summary>
+            <p class="mt-2 text-white/70 leading-relaxed">
+              PDFまたはスライド（PowerPoint / Google Slides）で納品します。ミーティング・プレゼン・共有用にそのまま活用できます。
+            </p>
+          </details>
+
+          <details class="group py-4 cursor-pointer">
+            <summary class="flex justify-between items-center">
+              <span class="font-semibold group-hover:text-brand transition">アニメーション動画はどんな内容ですか？</span>
+              <span class="transition group-open:rotate-45 text-white/60">+</span>
+            </summary>
+            <p class="mt-2 text-white/70 leading-relaxed">
+              試合や練習映像をもとに、チーム戦術・サインプレー・シークエンスを再現します。選手・コーチ間の共通理解を深める資料として活用されています。
+            </p>
+          </details>
+        </div>
+      </div>
+
+      <!-- 🧩 活用・共有 -->
+      <div>
+        <h3 class="text-xl font-semibold text-brand mb-4 flex items-center gap-2">
+          🧩 活用・共有について
+        </h3>
+        <div class="divide-y divide-white/10">
+          <details class="group py-4 cursor-pointer">
+            <summary class="flex justify-between items-center">
+              <span class="font-semibold group-hover:text-brand transition">チーム内で資料を共有しても大丈夫ですか？</span>
+              <span class="transition group-open:rotate-45 text-white/60">+</span>
+            </summary>
+            <p class="mt-2 text-white/70 leading-relaxed">
+              問題ありません。PDF・スライド形式ともにチーム内共有可能です。ただし、外部公開・SNS投稿時は事前にご相談ください。
+            </p>
+          </details>
+
+          <details class="group py-4 cursor-pointer">
+            <summary class="flex justify-between items-center">
+              <span class="font-semibold group-hover:text-brand transition">選手や保護者への共有も可能ですか？</span>
+              <span class="transition group-open:rotate-45 text-white/60">+</span>
+            </summary>
+            <p class="mt-2 text-white/70 leading-relaxed">
+              可能です。教育・振り返り目的での利用も想定しています。特にアニメーション動画はチーム内ミーティングや保護者説明に好評です。
+            </p>
+          </details>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
     <!-- ===== CTA bottom ===== -->
     <section class="py-12 bg-neutral-950 border-t border白/10">
