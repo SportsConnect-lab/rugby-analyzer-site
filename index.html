@@ -277,23 +277,16 @@
       </div>
 
       <!-- アニメーション解説 -->
-      <div>
-        <h3 class="text-lg font-semibold mt-6 text-white">アニメーション解説</h3>
-        <p class="mt-2 text-white/70">
-          試合プレー分解動画・ドリル案の動画。練習に直結。
-        </p>
-        <div class="mt-4 h-48 rounded-xl overflow-hidden border border-white/10 shadow-lg relative group">
-          <video autoplay loop muted playsinline 
-                 class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105 opacity-90">
-            <source src="images/animation.jpg" type="video/mp4">
-          </video>
-          <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition"></div>
-        </div>
-      </div>
+<h3 class="text-lg font-semibold mt-6 text-white">アニメーション解説</h3>
+<p class="mt-2 text-white/70">キープレイの分解動画（GIF/MP4）＋再現ドリル案。練習に直結。</p>
+<div class="mt-4 h-40 rounded-xl overflow-hidden border border-white/10 shadow-lg relative group">
+  <video class="object-cover w-full h-full" autoplay muted loop playsinline
+         poster="images/animation.jpg">
+    <source src="images/animated-dashboard.mp4" type="video/mp4" />
+  </video>
+  <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition"></div>
+</div>
 
-    </div>
-  </div>
-</section>
 
    <!-- ===== 料金 ===== -->
 <section id="pricing" class="py-16 bg-neutral-950 border-t border-b border-white/10">
