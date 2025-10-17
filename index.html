@@ -162,29 +162,83 @@
 
 
     <!-- ===== 選ばれる理由 ===== -->
-    <section id="reasons" class="py-14 bg-neutral-950 border-t border-b border-white/10">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-2xl sm:text-3xl font-bold text-white">RugbyAnalyzer が選ばれる理由</h2>
-        <div class="mt-8 grid md:grid-cols-3 gap-6">
-          <div class="p-6 rounded-2xl bg-neutral-900 border border-white/10 shadow-soft">
-            <div class="num">1</div>
-            <h3 class="mt-4 font-semibold text-white">“試合が変わる”EP/ヒートマップ</h3>
-            <p class="mt-2 text-white/70">陣地 × ライン速度 × 反則の相関を可視化。優先度が直感で伝わる指標設計。</p>
-          </div>
-          <div class="p-6 rounded-2xl bg-neutral-900 border border-white/10 shadow-soft">
-            <div class="num">2</div>
-            <h3 class="mt-4 font-semibold text-white">練習ドリルまで“落とす”納品形</h3>
-            <p class="mt-2 text-white/70">アニメーション解説＋再現ドリル案で、会議は短く、練習は濃く。</p>
-          </div>
-          <div class="p-6 rounded-2xl bg-neutral-900 border border-white/10 shadow-soft">
-            <div class="num">3</div>
-            <h3 class="mt-4 font-semibold text-white">導入しやすい運用と守秘</h3>
-            <p class="mt-2 text-white/70">動画共有は限定公開リンクでOK。NDA対応・レビュー同席も可能。</p>
-          </div>
+<section id="reasons" class="py-16 bg-neutral-950 border-t border-b border-white/10 text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-center">RugbyAnalyzer が選ばれる3つの理由</h2>
+    <p class="mt-3 text-center text-white/70">
+      “データを見る”だけでは終わらせない。<br class="hidden sm:block" />
+      現場で活かし、チームを進化させるための分析支援。
+    </p>
+
+    <div class="mt-12 grid md:grid-cols-3 gap-8">
+      <!-- 1 -->
+      <div class="reveal p-6 rounded-2xl bg-neutral-900 border border-white/10 shadow-soft hover:border-sky-400/40 transition">
+        <div class="flex items-center gap-3">
+          <div class="text-sky-400 text-2xl font-bold">①</div>
+          <h3 class="text-xl font-semibold">プロアナリストが伴走する「実践型分析」</h3>
         </div>
-        <div class="mt-8"><a href="#features" class="inline-flex px-5 py-3 rounded-lg bg-brand text-black font-semibold hover:bg-brand-dark">すべての機能を見る</a></div>
+        <p class="mt-3 text-white/75 leading-relaxed">
+          戦術意図を読み解き、課題を特定し、練習メニューまで落とし込む。<br />
+          単なる数字ではなく、チームが“すぐに動ける”分析を提供。
+        </p>
       </div>
-    </section>
+
+      <!-- 2 -->
+      <div class="reveal p-6 rounded-2xl bg-neutral-900 border border-white/10 shadow-soft hover:border-sky-400/40 transition">
+        <div class="flex items-center gap-3">
+          <div class="text-sky-400 text-2xl font-bold">②</div>
+          <h3 class="text-xl font-semibold">チーム専用の「カスタム設計」</h3>
+        </div>
+        <p class="mt-3 text-white/75 leading-relaxed">
+          すべてのレポートをチームごとに最適化。<br />
+          独自KPIとスタイルに合わせてアニメーションで戦術を可視化。
+        </p>
+      </div>
+
+      <!-- 3 -->
+      <div class="reveal p-6 rounded-2xl bg-neutral-900 border border-white/10 shadow-soft hover:border-sky-400/40 transition">
+        <div class="flex items-center gap-3">
+          <div class="text-sky-400 text-2xl font-bold">③</div>
+          <h3 class="text-xl font-semibold">データ蓄積 × 選手の学び</h3>
+        </div>
+        <p class="mt-3 text-white/75 leading-relaxed">
+          試合ごとの分析を蓄積し、シーズンを通じて“ラグビー偏差値”を向上。<br />
+          選手自身が学び、考え、成長するチーム文化を育てます。
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-10 text-center">
+      <a href="#features"
+         class="inline-flex px-6 py-3 rounded-lg bg-sky-500 hover:bg-sky-600 text-black font-semibold transition">
+        すべての機能を見る
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ✨ スクロールでふわっと登場 -->
+<script>
+  (function(){
+    const els = document.querySelectorAll('.reveal');
+    els.forEach(el => {
+      el.style.opacity = 0;
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'opacity .7s ease, transform .7s ease';
+    });
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){
+          e.target.style.opacity = 1;
+          e.target.style.transform = 'translateY(0)';
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: .15 });
+    els.forEach(el=>io.observe(el));
+  })();
+</script>
+
 
     <!-- ===== 導入チーム・パートナー ===== -->
     <section id="logos" class="py-16 bg-neutral-950 border-b border-white/10 text-center">
